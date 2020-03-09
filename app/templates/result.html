@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>result</title>
+
+    </head>
+    <body>
+        <!-- 这些大括号百分号我是照抄的 -->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
+        <!--   这是我插入的测试图片     -->
+        <img src="../static/test.jpg">
+        
+        {% block content %}{% endblock %}
+    </body>
+</html>
