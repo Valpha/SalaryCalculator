@@ -16,8 +16,8 @@
         {% endwith %}
 
         <!--   这是我插入的测试图片     -->
-        <img src="../static/test.jpg">
-        
+        <!-- <img src="../static/test.jpg"> -->
+        <img src="data:;base64,{{ img_stream }}">
         {% block content %}{% endblock %}
     </body>
 </html>

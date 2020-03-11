@@ -1,18 +1,22 @@
 {% block content %}
-    <form action="{{ url_for('handle') }}" method="post" novalidate>
-        {{ form.hidden_tag() }}
-        <p>
-            {{ form.para1.label }}<br>
-            {{ form.para1(size=32) }}
-        </p>
-        <p>
-            {{ form.para2.label }}<br>
-            {{ form.para2(size=32) }}
-        </p>
-        <p>
-            {{ form.para3.label }}<br>
-            {{ form.para3(size=32) }}
-        </p>
-        <p>{{ form.submit() }}</p>
-    </form>
+<form action="{{ url_for('handle') }}" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.salary.label }}<br>
+        {{ form.salary(size=32) }}
+    </p>
+    <p>
+        {{ form.span.label }}<br>
+        {{ form.span(size=32) }}
+    </p>
+    <p>
+        {{ form.rate.label }}<br>
+        {{ form.rate(size=32) }}
+    </p>
+    <p>
+        {{ form.deposit.label }}<br>
+        {{ form.deposit(size=32) }}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
 {% endblock %}
