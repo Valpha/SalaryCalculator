@@ -6,7 +6,7 @@ import numpy as np
 import base64
 from pylab import mpl
 from io import BytesIO
-mpl.rcParams['font.family'] = ['Microsoft YaHei']  # 指定默认字体
+mpl.rcParams['font.family'] = ['SimHei']  # 指定默认字体
 mpl.rcParams['axes.unicode_minus'] = False  # 解决保存图像是负号'-'显示为方块的问题
 
 
